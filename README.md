@@ -62,10 +62,9 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
     $ npm i
 
     # Crie o arquivo .env com os campos abaixo
-    @"
+  
     RABBITMQ_URL= {URL DE CONEXÃO COM O RABBITMQ} Ex. amqp://localhost
     QUEUE_NAME={NOME DA FILA DO RABBITMQ} Ex. messageQueue
-    "@ | Out-File -Encoding utf8 .env
 
 
     # Aplicação executada na porta 4000
@@ -76,7 +75,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
     $ cd consumer
 
     # Crie um arquivo ".env" com os campos abaixo
-    @"
+ 
     DB_USER={SEU USUÁRIO DO BANCO DE DADOS} Ex. postgres
     DB_HOST={SEU HOST } Ex. localhost
     DB_NAME={NOME DO SEU BANCO DE DADOS}
@@ -84,7 +83,6 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
     DB_PORT={PORTA PARA ACESSO AO BANCO} Ex. 5432
     RABBITMQ_URL= {URL DE CONEXÃO COM O RABBITMQ} Ex. amqp://localhost
     QUEUE_NAME={NOME DA FILA DO RABBITMQ} Ex. messageQueue
-    "@ | Out-File -Encoding utf8 .env
 
     # Instale as dependências do projeto
     $ npm i
